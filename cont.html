@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #e0f7fa;
+				background-image: url("path-to-image.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+
+			.contact-container {
+				background-color: white;
+				padding: 40px;
+				border-radius: 10px;
+				box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+				max-width: 500px;
+				width: 100%;
+			}
+
+			h2 {
+				text-align: center;
+				margin-bottom: 20px;
+				font-size: 28px;
+				color: #333;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 8px;
+				font-size: 16px;
+				color: #333;
+				text-align: center;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 20px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+
+			textarea {
+				height: 150px;
+				resize: none;
+			}
+
+			button {
+				width: 100%;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+				background-color: #4caf50;
+				color: white;
+			}
+
+			button:hover {
+				background-color: #45a049;
+			}
+
+			header {
+				background-color: #333;
+				padding: 20px;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			header h1 {
+				color: white;
+				font-size: 24px;
+			}
+
+			nav ul {
+				list-style: none;
+				display: flex;
+			}
+
+			nav ul li {
+				margin: 0 15px;
+			}
+
+			nav ul li a {
+				text-decoration: none;
+				color: white;
+				font-size: 16px;
+			}
+
+			nav ul li a:hover {
+				color: #4caf50;
+			}
+
+			.logo-left,
+			.logo-right {
+				height: 50px;
+			}
+
+			footer {
+				background-color: #333;
+				color: white;
+				text-align: center;
+				padding: 10px 0;
+				position: relative;
+				width: 100%;
+			}
+
+			footer p {
+				font-size: 14px;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="logo.png" alt="Left Logo" class="logo-left" />
+			<nav>
+				<h1>Startup Incubation Center</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="program.html">Programs</a></li>
+					<li><a href="pho.html">Gallery</a></li>
+					<li><a href="reg.html">Login</a></li>
+					<li><a href="cont.html">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="gehu.png" alt="Right Logo" class="logo-right" />
+		</header>
+
+		<div class="contact-container">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Your Name:</label>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Enter your name"
+					required
+				/>
+
+				<label for="email">Your Email:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="Enter your email"
+					required
+				/>
+
+				<label for="message">Your Message:</label>
+				<textarea
+					id="message"
+					name="message"
+					placeholder="Enter your message"
+					required
+				></textarea>
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<footer>
+			<p>&copy; 2024 Startup Incubation Center. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
